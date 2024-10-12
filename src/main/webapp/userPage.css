@@ -1,0 +1,154 @@
+/* Reset styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #26a69a;
+    padding: 20px 10px;
+    margin: 0 0 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar h1 {
+    color: #fff;
+    margin: 0 0 0 50px;
+    font-size: 30px;
+}
+
+/* Button container styles */
+.button-container {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    position: relative; /* Ensure proper positioning of dropdown content */
+}
+
+/* Button styles */
+.button {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.button:hover {
+    color: #ccc;
+}
+
+/* Action button styles */
+.action-button {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin-right: 10px;
+}
+
+.action-button:hover {
+    color: #ccc;
+}
+
+/* Dropdown content styles */
+.dropdown-content {
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+    top: 100%;
+    border-radius: 5px;
+    display: none; /* Initially hide dropdown content */
+}
+
+/* Dropdown button hover styles */
+.button-container:hover .dropdown-content {
+    display: block; /* Show dropdown content when hovering over the button container */
+}
+
+/* Dropdown content hover styles */
+.dropdown-content:hover {
+    display: block; /* Keep dropdown content visible when hovering over it */
+}
+
+/* Dropdown button styles */
+.dropdown-content button {
+    background-color: #26a69a;
+    color: white;
+    border: none;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+}
+
+.dropdown-content button:hover {
+    background-color: #10ad9d;
+}
+
+/* Employee details section styles */
+.employee-details {
+    margin-top: 80px; 
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Employee card styles */
+.employee {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+}
+
+/* Employee image styles */
+.employee img {
+    width: 190px;
+    height: 180px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Employee table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th, table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    font-size: 14px; 
+}
+
+table th {
+    background-color: #f2f2f2;
+    font-size: 16px; 
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Document</title>
+    <style>
+        body{
+            background: rgb(245, 245, 245);
+        }
+        #header{
+            background: white;
+            margin: 290px 0 0 650px;
+            padding: 15px 0 0 0;
+            border: 2px solid rgb(236, 236, 236);
+            width: 300px;
+            height: 180px;
+        }
+        #header label{
+            font-size: 19px;
+            margin : 10px 0 50px 100px;
+            border-bottom: 3px solid rgb(240, 240, 240);
+            padding : 5px 0 8px 0;
+        }
+        #header label #icon{
+            margin: 0 10px 0 0;
+        }
+        input[type=email]{
+            font-size: 15px;
+            margin : 25px 0 25px 25px;
+            padding: 2px 5px 0 5px;
+            width: 236px;
+            height: 30px;
+            border: none;
+            border-bottom: 2px solid black;
+        }
+        textarea:focus, input[type=email]:focus {
+            outline: none;
+        }
+        input[type=submit]{
+            font-size: 18px;
+            margin : 5px 0 30px 20px;
+            padding : 7px 100px;
+            border:2px solid rgb(150, 197, 150);
+            background: rgb(150, 197, 150);
+        }
+        input[type=submit]:hover{
+            border:2px solid rgb(136, 196, 136);
+            background: rgb(136, 196, 136);
+        }
+
+    </style>
+</head>
+<body>
+<div id="header">
+    <form action="email.jsp" method="Get">
+        <label><i id="icon" class="fa-solid fa-envelope fa-beat fa-xl" style="color: #3e567e;"></i>Gmail</label><br>
+        <input type="email" placeholder="ABC123@gmail.com" name="email" id="email"><br>
+        <input type="submit" value="Submit" id="submit">
+    </form>
+</div>
+</body>
+</html>

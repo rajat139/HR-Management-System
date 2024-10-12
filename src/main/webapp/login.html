@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            height: 100%; 
+			background: linear-gradient(to bottom, #26a69a 50%, rgb(244, 244, 244) 50%); 
+			background-attachment: fixed;
+			overflow: hidden; 
+        }
+        
+        #navbar {
+            background-color: transparent;
+            /*border-bottom:2px solid rgb(236, 236, 236) ;*/
+            padding: 90px 15px 15px 15px;
+            text-align: center;
+            color: white;
+            font-size: 320%;
+            width: 100%;
+            font-family: Brush Script MT;
+        }
+
+        #form {
+            background-color: white;
+            border: 1px solid rgb(242, 237, 237);
+            width: 280px;
+            padding: 25px 15px;
+            margin: 40px auto;
+        }
+
+        #heading label {
+            font-size: 20px;
+            border-bottom: 2px solid rgb(217, 214, 214);
+            padding: 0 0 5px 0;
+        }
+
+        #heading {
+            margin: 0 0 5px 0;
+            text-align: center;
+        }
+        
+        #body{
+			padding: 0 15px;
+		}
+
+        #body label {
+            display: block;
+            margin: 25px 0 5px 0;
+        }
+
+        #body input {
+            border: none;
+            border-bottom: 2px solid black;
+            width: 100%;
+            font-size: 17px;
+            padding: 4px;
+            box-sizing: border-box;
+        }
+
+        textarea:focus,
+        input:focus {
+            outline: none;
+        }
+
+        #body input::placeholder {
+            color: rgb(195, 195, 195);
+        }
+        
+          #body .button1 {    
+            margin-top: 15px;
+        }
+
+        #body .button1 button {
+            color: #26a69a;
+            background: none;
+            border: none;
+            font-size: 14px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        #body button[type="submit"] {
+            background-color: #26a69a;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            font-size: 20px;
+            width: 100%;
+            margin: 20px 0 10px 0;
+            display: inline-block;
+        }
+
+        #body button[type="submit"]:hover {
+            background-color: rgb(35, 154, 142);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+        Employee <span style="color:black;">Management</span> System
+    </div>
+    <div id="form">
+        <form action="emp" method="get">
+            <div id="heading">
+                <label><i class="fa-solid fa-user fa-beat"></i>&nbsp;&nbsp;Admin | User</label>
+            </div>
+            <div id="body">
+                <label for="user">User</label>
+                <input type="text" placeholder="Abc@123" name="user" id="user" required><br>
+                <label for="pass">Password</label>
+                <input type="password" placeholder="*****" name="password" id="pass" required>
+                <br>
+                <div class="button1">
+				    <button id="forgotPasswordBtn">Forgot Password ?</button>
+				</div>
+
+                <button type="submit">Login</button>
+            </div>
+        </form>
+        <script>
+			    document.getElementById('forgotPasswordBtn').addEventListener('click', function(event) {
+			        event.preventDefault(); // prevent the form from being submitted
+			        window.location.href = 'email.html'; // redirect to the forgot password page
+			    });
+		</script>
+    </div>
+</body>
+
+</html>
